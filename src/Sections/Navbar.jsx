@@ -1,4 +1,4 @@
-export default function Navbar() {
+export default function Navbar(props) {
     return (
         <div style={{
             backgroundColor: 'blue',
@@ -8,7 +8,7 @@ export default function Navbar() {
             fontWeight: 'bold',
             color: 'white'
         }}>
-            <h1>Imrane sarsri</h1>
+            <h1>{props.Title}</h1>
         </div >
     )
 }

@@ -1,4 +1,4 @@
-export default function Button() {
+export default function Button({ children }) {
     return (
         <button className="buttonHover" style={{
             background: 'purple',
@@ -8,7 +8,7 @@ export default function Button() {
             borderRadius: '10px',
         }}
         >
-            Tag Buttom
+            {children}
         </button>
     )
 }
